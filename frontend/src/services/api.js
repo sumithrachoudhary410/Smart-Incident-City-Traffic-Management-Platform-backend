@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:8081";
+const API_BASE = process.env.REACT_APP_API_URL || "https://smart-incident-city-traffic-management-platform-production.up.railway.app";
 
 const API = axios.create({
   baseURL: API_BASE.endsWith("/api") ? API_BASE : `${API_BASE}/api`,
